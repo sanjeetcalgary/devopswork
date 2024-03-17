@@ -25,6 +25,8 @@
 **Instruction**
 ----------------------------------
 
+1- mvn install
+
 ### Direct Images:
 
 | Image Name   | Version        | PORT |Comments   |
