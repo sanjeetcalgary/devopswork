@@ -26,6 +26,16 @@
 ----------------------------------
 
 1- mvn install
+2- copy target to appserver/
+3- Start building images
+    A. docker build -t sanjeetkr/vproject:v1 . => appserver
+    B. docker build -t sanjeetkr/db:v1 . => db
+    C. docker build -t sanjeetkr/web:v1 . => webserver
+    D. docker pull memcached
+    E. docker pull rabbitmq
+
+4- 
+
 
 ### Direct Images:
 
