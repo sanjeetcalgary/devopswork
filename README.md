@@ -29,14 +29,14 @@
 
 | Image Name   | Version        | PORT |Comments   |
 |--------------|----------------|------|-----------|
-|              |                |      |           |
-|              |                |      |           |
-|              |                |      |           |
-|              |                |      |           |
-|              |                |      |           |
+| mysql |5.7.25 | 3306 | Container name= 'vprodb' with dbname= 'accounts' |
+| Tomcat  |        | 8080  |     |
+| Memcache |    |  11211   | container name= 'vprocache01' |
+| Broker    |    |   15672   |   container name = 'vpromq01'  |
+|  elastic search   |     |  9300    |container name= 'vprosearch01'  |
 
 
-'''
+```
     **nginx.conf**
 
     upstream vproapp {
@@ -54,4 +54,4 @@
 
     Note: container shpuld run with name vproapp in docker
             In kubernetes, service should run with name vproapp
-'''
+```
