@@ -41,7 +41,7 @@
 
 | Image Name   | Version        | PORT |Comments   |
 |--------------|----------------|------|-----------|
-| mysql |5.7.25 | 3306 | Container name= 'vprodb' with dbname= 'accounts' |
+| mysql |8.0.33 | 3306 | Container name= 'vprodb' with dbname= 'accounts' |
 | Tomcat  |        | 8080  |     |
 | Memcache |    |  11211   | container name= 'vprocache01' |
 | Broker    |    |   15672   |   container name = 'vpromq01'  |
@@ -87,4 +87,16 @@
     ```
     ![Docker_Images](image-2.png)
 
-4> Write docker-compose
+4> Write docker-compose => docker-compose.yml
+
+    $ docker-compose up -d
+
+    ![compose](image-3.png)
+
+![vprofile](image-4.png)
+
+Login: 
+    user: admin_vp
+    pwd: admin_vp
+
+    
