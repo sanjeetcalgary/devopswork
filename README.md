@@ -67,3 +67,24 @@
     Note: container shpuld run with name vproapp in docker
             In kubernetes, service should run with name vproapp
 ```
+
+**Step_Instructions**
+---------------------------------------------------
+
+1> mvn install => to get target folder
+2> move the target directory to appserver folder as artifacts will be copied
+3> Start building images for appserver, webserver, dbserver, broker , indexing and caching
+
+    ```
+        A. vprofileappserver =>  docker build -t sanjeetkr/vprofileappserver:v1 .
+        B. vprofilewebserver =>  docker build -t sanjeetkr/vprofilewebserver .
+        C. vprofiledb        =>  docker build -t sanjeetkr/vprofiledb:v1 .
+
+        1. docker pull memcached
+        2. docker pull rabbitmq
+        3. docker pull elasticsearch:7.17.18
+
+    ```
+    ![Docker_Images](image-2.png)
+
+4> Write docker-compose
